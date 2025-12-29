@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+/*---------------------------------------------------------*/
+/*                   Global CSS Defaults                   */
+/*---------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	outline:none;
+}
+body {
+/*	line-height: 1.2em;*/
+	font-family: Verdana, Arial, Helvetica;
+	color: #333;
+	font-size: 0.8em;
+	background-repeat: repeat;
+	background-image: url(../_images/background_tile.jpg);
+}
+ol, ul {
+	list-style: none;
+}
+
+/*---------------------------------------------------------*/
+/*                    Global CSS Layout                    */
+/*---------------------------------------------------------*/
+h1{
+	width: 980px;
+	font-size: 0.7em;
+	color: #666;
+	text-align: right;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+object {
+	outline:none;
+}
+
+
+#centered {
+	position: absolute;
+	left:50%;
+	height:600px;
+	width: 1100px;
+	margin-top:-300px;
+	margin-left:-550px;
+	top: 50%;
+}
+
+#wrapper {
+	
+
+	
+	height: 590px;
+	width: 970px;
+	border: 7px solid #fff;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	position: relative;
+}
+
+#header  {
+	background-image: url(../_images/header-background_noise.png);
+	background-repeat: repeat-x;
+	height: 92px;
+}
+#header #regional {
+	text-align: right;
+	padding-right: 20px;
+	float: right;
+	padding-top: 8px;
+}
+#mainNav ul {
+	float: left;
+	line-height: 2.4em;
+	background-image: url(../_images/menu-background.png);
+	background-repeat: repeat;
+	width: 970px;
+	color: #FFF;
+	border-top: 2px solid #FFF;
+	border-bottom: 2px solid #FFF;
+}
+#mainNav li {
+	float: right;
+}
+#mainNav li a {
+	color: #CCC;
+	text-decoration: none;
+	display: block;
+	margin-right:.5em;
+	padding:0 15px;
+	
+}
+
+#mainNav li a:link, #mainNav li a:visited {
+}
+
+#mainNav li a:hover {
+	color: #000;
+	background-color:#CCC;
+	text-shadow: 2px 2px 2px #666;
+}
+
+#mainNav li a.current, #mainNav li a.current:hover, #mainNav li a.current:active {
+	color:#333;
+	background-color:#fff;
+	cursor:default;
+/*	font-weight: bold;*/
+	text-shadow: 2px 2px 2px #999;
+}
+
+
+#homePage #wrapper {
+	background-image: url(../_images/body_background.jpg);
+	background-repeat: no-repeat;
+}
+
+#homePage #homeimage{
+	width: 290px;
+	position: absolute;
+	top:150px;
+	left:43px;
+	z-index: 1;
+}
+
+#homeimage img {
+	border: medium solid #FFF;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+
+#homePage #content{
+	width: 577px;
+	position: absolute;
+	top:150px;
+	left:343px;
+	z-index: 1;
+	background-repeat: repeat;
+	padding: 10px;
+	color: #FFF;
+	background-image: url(../_images/content-background_noise.png);
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+}
+
+#homePage #content h1{
+	color: #FFF;
+	font-size: 2em;
+	font-weight: bold;
+	width: auto;
+	height: auto;
+	padding: 10px 10px 20px 10px;
+	text-align: left;
+}
+#homePage #content p{
+	padding: 5px 10px 5px 10px;
+}
+
+#Gallery #wrapper {
+	background-image: url(../_images/body_background.jpg);
+	background-repeat: no-repeat;
+}
+#Gallery #content {
+	height: 463px;
+	width: 970px;
+}
+
+
+#Bio #wrapper {
+	background-image: url(../_images/body_background.jpg);
+	background-repeat: no-repeat;
+}
+#Bio #content{
+	width: 447px;
+	position: absolute;
+	top:154px;
+	left:32px;
+	z-index: 1;
+	background-repeat: repeat;
+	padding: 10px;
+	color: #FFF;
+	background-image: url(../_images/content-background_noise.png);
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000
+
+}
+
+#Bio #content h1{
+	color: #FFF;
+	font-size: 2em;
+	font-weight: bold;
+	width: auto;
+	height: auto;
+	padding: 10px 10px 20px 10px;
+	text-align: left;
+}
+#Bio #content p{
+	padding: 10px 10px 30px 10px;
+}
+
+#Contact #wrapper {
+	background-image: url(../_images/body_background.jpg);
+	background-repeat: no-repeat;
+}
+
+#Contact #content{
+	width: 401px;
+	position: absolute;
+	top:141px;
+	left:43px;
+	z-index: 1;
+	background-repeat: repeat;
+	padding: 10px;
+	color: #FFF;
+	background-image: url(../_images/content-background_noise.png);
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000
+
+}
+
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+#counter {
+	padding-left: 35px;
+}.scrollContainer ul li {
+	list-style-type: disc;
+	padding-left: 10px;
+	margin-left: 20px;
+	list-style-position: inside;
+}
+#contactinfo {
+	font-size: 1.2em;
+	width: 373px;
+	position: absolute;
+	top:290px;
+	left:529px;
+	z-index: 1;
+	padding: 10px;
+	color: #333;
+	text-align: center;
+}
